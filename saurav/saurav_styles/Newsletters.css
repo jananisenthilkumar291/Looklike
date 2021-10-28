@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald';
+}
+.upper{ 
+	padding: 70px 50px;
+	background: url("../saurav_img/upper.jpg");
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
+}
+#upper-left{
+	font-size: 30px;
+	font-family: 'Oswald';
+	float: left;
+}
+#upper-right{
+	float: right;
+}
+#upper-right a{
+	color: white;
+	text-decoration: double;
+}
+.column{
+    float: left;
+    padding: 10px;
+    height: auto;
+}
+.left {
+    width: 20%;
+    background: #8888;
+  }
+  
+.right {
+    width: 80%;
+    background: #f1f1f1;
+}
+.left h3{
+    background: #6B2C3F;
+    color: white;
+    padding: 10px;
+}
+.left p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+}
+.left a{
+    color: black;
+    text-decoration: double;
+}
+.buton{
+    text-align: center;
+}
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    text-align: center;
+    align-items: center;
+    width: 25%;
+    background-color: #6B2C3F;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+  }

@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+    /* font-family: sans-serif; */
+}
+.right h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald';
+}
+.upper{ 
+	padding: 70px 50px;
+	background: url("../saurav_img/upper.jpg");
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
+}
+#upper-left{
+	font-size: 30px;
+	font-family: 'Oswald';
+	float: left;
+}
+#upper-right{
+	float: right;
+}
+#upper-right a{
+	color: white;
+	text-decoration: double;
+}
+.column{
+    float: left;
+    padding: 10px;
+    height: auto;
+}
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.left {
+    width: 25%;
+    padding-left: 5%;
+} 
+.right {
+    width: 75%;
+    padding-right: 5%;
+}
+
+.left h3{
+    background: #6B2C3F;
+    letter-spacing: 2px;
+    color: white;
+    padding: 7px;
+    padding-left: 10px;
+}
+.left p{
+    font-size: small;
+}
+.left a{
+    color: rgb(121, 121, 121);
+    text-decoration: double;
+}
+.left a:hover{
+    color: #6B2C3F;
+}
+.right img{
+    max-width: 100%;
+}
+.right p{
+    /* color: rgb(121, 121, 121); */
+    color: #888888;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.right h3,h2{
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+.reply{
+    background-color: rgb(229, 226, 226);
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+  }

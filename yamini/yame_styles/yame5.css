@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(241, 234, 234);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: 1px;
+}
+.header{
+    background-image:url("../../Aakash/img/parallax-.jpg");
+    background-size: fixed;
+    padding: 30px 70px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header a {
+    color: white;
+  }
+   p > a{
+    right: 0;
+    margin-left: 82%;
+    text-decoration: none;
+    color: white;
+  }
+.h2tage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.d-flex.or{
+    margin-top: 15px;
+}
+.first{
+    margin-top: 20px;
+
+}
+.first >ul li{
+    list-style: none;
+}
+.ic{
+    color: green;
+}
+.is{
+    color: red;
+}
+.ia{
+    color: slateblue;
+}
+@media (max-width:800px){
+    .d-flex{
+        flex-direction: column;
+    }
+    p > a{
+        margin-left: 0;
+      }
+    
+}

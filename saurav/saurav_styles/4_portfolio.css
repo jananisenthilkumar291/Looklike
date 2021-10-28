@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald';
+}
+.upper{ 
+	padding: 80px 60px;
+	background: url("../saurav_img/upper.jpg");
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
+}
+#upper-left{
+	font-size: 30px;
+	font-family: 'Oswald';
+	float: left;
+}
+#upper-right{
+	float: right;
+}
+#upper-right a{
+	color: white;
+	text-decoration: double;
+}
+
+.column {
+    float: left;
+    padding: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .column a{
+    color: black;
+    text-decoration: double;
+  }
+  .column p{
+      color: #888888;
+  }
+  .column:hover{
+    opacity: 0.85;
+    transition: 0.5s;
+    color: black;
+  } 
+  .left1, .left2, .right1, .right2{
+    width: 25%;
+  }
+  .left1, .left2, .right1, .right2{
+    max-width: 100%;
+  }
+
+.left1 .secondary, .left2 .secondary, .right1 .secondary, .right2 .secondary{
+    position: absolute;
+    left: 42%;
+    bottom: 60%;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    
+  }
+.left1:hover .secondary, .left2:hover .secondary, .right1:hover .secondary, .right2:hover .secondary{
+  display: block;
+}
+
+.fa{
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid #6B2C3F;
+    border-radius: 5px;
+    color: #6B2C3F;
+    background-color: whitesmoke;
+}
+.fa:hover{
+    background-color: #6B2C3F;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  

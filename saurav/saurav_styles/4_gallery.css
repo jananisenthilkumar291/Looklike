@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald';
+}
+.upper{ 
+padding: 80px 60px;
+background: url("../saurav_img/upper.jpg");
+background-size: cover;
+color: white;
+background-attachment: fixed;
+}
+#upper-left{
+font-size: 30px;
+font-family: 'Oswald';
+float: left;
+}
+#upper-right{
+float: right;
+}
+#upper-right a{
+color: white;
+text-decoration: double;
+}
+.column {
+  float: left;
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+}
+.column:hover{
+  opacity: 0.65;
+  transition: 0.5s;
+  color: black;
+} 
+.left1, .left2, .right1, .right2{
+  margin: 2px;
+  overflow: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.left1, .left2, .right1, .right2{
+  max-width: 100%;
+}
+.column:hover .left1, .left2, .right1, .right2 {
+  transform: rotateY(180deg);
+}
+
+.primary, .secondary {
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.primary{
+background-color: #bbb;
+color: black;
+}
+
+.secondary {
+transform: rotateY(180deg);
+}
+
+.left1 .secondary, .left2 .secondary, .right1 .secondary, .right2 .secondary{
+position: absolute;
+bottom: 50%;
+vertical-align: middle;
+text-align: center;
+display: hidden;   
+}
+
+.column:hover .left1 .secondary, .left2 .secondary, .right1 .secondary, .right2 .secondary{
+display: block;
+}
+
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+}
+}

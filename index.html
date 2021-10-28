@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="Aakash/css/index.css" />
+    <link rel="stylesheet" href="Aakash/css/gen.css" />
+    <link rel="stylesheet" href="Aakash/css/nav.css" />
+    <link rel="stylesheet" href="Aakash/css/footer.css" />
+    <link rel="stylesheet" href="Aakash/css/prodCSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Aakash/shop/script/addtocart.js"></script>
+    <script src="Aakash/shop/script/shop-items.js"></script>
+    <script src="Aakash/shop/script/each_cat_items.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <div
+      class="includeHTML rel"
+      style="z-index: 3; position: sticky; top: 0"
+      w3-include-html="Aakash/html/nav.html"
+    ></div>
+    <!-- Slideshow -->
+    <div class="slideshow rel">
+      <a class="prev abs" onclick="changeSlide(-1)" href="javascript:void(0);"
+        >&#10094;</a
+      >
+      <a class="next abs" onclick="changeSlide(1)" href="javascript:void(0);"
+        >&#10095;</a
+      >
+      <div class="slidesContainer">
+        <div class="slide rel">
+          <div class="content abs">
+            Up to 30% discout
+            <p class="heading">Makeup Foundation Cream</p>
+          </div>
+          <img src="Aakash/img/slide1.jpg" alt="Slide 1" />
+        </div>
+        <div class="slide rel">
+          <div class="content abs">
+            Up to 30% discout
+            <p class="heading">Makeup Compact Powder Collection</p>
+          </div>
+          <img src="Aakash/img/slide2.jpg" alt="Slide 2" />
+        </div>
+      </div>
+    </div>
+    <!-- Our Little Story -->
+    <div class="lStory flex">
+      <div class="left">
+        <img src="Aakash/img/about_us.png" alt="out little story" />
+      </div>
+      <div class="right flex">
+        <div class="content">
+          <p class="heading">OUR ABOUT US</p>
+          <h1 class="heading" style="font-size: 3.5em">Our Little Story</h1>
+          <hr class="hrBar" style="width: 250px; height: 3px" />
+          <hr class="hrBar" style="width: 150px; height: 2px" />
+          <p style="color: gray; line-height: 175%">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry’s standard dummy text
+            ever since the 1500s Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry’s standard….
+          </p>
+          <button onclick="window.scrollTo(0,0);" class="btn btnhover" type="button">Read More</button>
+        </div>
+      </div>
+    </div>
+    <!-- Shop category slideshow -->
+    <div class="shop rel">
+      <span class="heading" style="font-size: xx-large; font-weight: bold"
+        >SHOP BY CATEGORY</span
+      >
+      <hr class="hrBar" style="width: 100px; height: 3px" />
+      <a class="prev abs" onclick="slideRight(-1)" href="javascript:void(0);"
+        >&#10094;</a
+      >
+      <a class="next abs" onclick="slideRight(1)" href="javascript:void(0);"
+        >&#10095;</a
+      >
+      <div class="forScroll rel">
+        <div class="img-container flex rel">
+          <div class="image">
+            <img src="Aakash/img/image1.jpg" alt="img1" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Cleanser', cleanser)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Cleanser <span class="ver-bar rel"> 11 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image2.jpg" alt="img2" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Concealers', concealers)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Concealers <span class="ver-bar rel"> 2 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image3.jpg" alt="img3" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Eye Makeup', eye_makeup)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Eye Makeup <span class="ver-bar rel"> 4 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image2.jpg" alt="img2" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Face Powder', face_powder)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Face Powder <span class="ver-bar rel"> 1 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image1.jpg" alt="img1" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Hair Care', hair_care)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Hair Care <span class="ver-bar rel"> 7 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image4.jpg" alt="img4" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Hair Sprays', hair_sprays)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Hair Sprays <span class="ver-bar rel"> 1 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image3.jpg" alt="img3" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Lip Makeup', lip_makeup)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Lip Makeup <span class="ver-bar rel"> 10 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image2.jpg" alt="img2" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Makeup', makeup)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Makeup <span class="ver-bar rel"> 3 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image1.jpg" alt="img1" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Nail Care', nail_care)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Nail Care <span class="ver-bar rel"> 2 Items</span></a
+              >
+            </div>
+          </div>
+          <div class="image">
+            <img src="Aakash/img/image4.jpg" alt="img4" />
+            <div class="descrip bold abs">
+              <a
+                onclick="sendCat('Night Creams', night_creams)"
+                href="Aakash/shop/html/each_cat_items.html"
+              >
+                Night Cream <span class="ver-bar rel"> 1 Items</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- horizontal bar -->
+    <hr class="hrBar" />
+    <!-- speacial features -->
+    <div class="spcl-feature flex">
+      <div class="spcl-item flex">
+        <div class="left">
+          <span class="fa fa-map-marker"></span>
+        </div>
+        <div class="right">
+          <span class="bold">Free Delivery</span>
+          <p>Free shipping on all order</p>
+        </div>
+      </div>
+      <div class="spcl-item flex">
+        <div class="left">
+          <span class="fa fa-money"></span>
+        </div>
+        <div class="right">
+          <span class="bold">Money Return</span>
+          <p>Back guarantee in 7 days</p>
+        </div>
+      </div>
+      <div class="spcl-item flex">
+        <div class="left">
+          <span class="fa fa-handshake-o"></span>
+        </div>
+        <div class="right">
+          <span class="bold">Member Discount</span>
+          <p>Onevery order over £350.00</p>
+        </div>
+      </div>
+      <div class="spcl-item flex">
+        <div class="left">
+          <span class="fa fa-user-circle-o"></span>
+        </div>
+        <div class="right">
+          <span class="bold">Online Support</span>
+          <p>Support 24 hours a day</p>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Products -->
+    <div class="featured-p rel">
+      <br /><br /><br /><br />
+      <span class="heading" style="font-size: xx-large; font-weight: bold"
+        >FEATURED PRODUCTS</span
+      >
+      <hr class="hrBar" style="width: 100px; height: 3px" />
+      <div class="prodContainer flex">
+        <script>
+          let prodParent = document.querySelector(
+            ".featured-p .prodContainer.flex"
+          );
+          makeItem(item13, prodParent);
+          makeItem(item7, prodParent);
+          makeItem(item15, prodParent);
+          makeItem(item17, prodParent);
+          makeItem(item5, prodParent);
+          makeItem(item16, prodParent);
+        </script>
+      </div>
+      <button
+        onclick="window.open('Aakash/shop/html/shop.html','_parent')"
+        type="button"
+        class="btn btnhover"
+      >
+        View More Products
+      </button>
+    </div>
+    <!-- Discount Poster -->
+    <div class="poster">
+      Up to 40% Discount
+      <p class="heading">Makeup Brush Collection</p>
+      <button
+        onclick="window.open('Aakash/shop/html/shop.html','_parent')"
+        class="btn btnhover"
+      >
+        Shop Now
+      </button>
+    </div>
+    <!-- New Products -->
+    <div class="new-p rel">
+      <br /><br /><br /><br />
+      <span class="heading" style="font-size: xx-large; font-weight: bold"
+        >NEW PRODUCTS</span
+      >
+      <hr class="hrBar" style="width: 100px; height: 3px" />
+      <a class="prev abs" onclick="newProdRight(-1)" href="javascript:void(0);"
+        >&#10094;</a
+      >
+      <a class="next abs" onclick="newProdRight(1)" href="javascript:void(0);"
+        >&#10095;</a
+      >
+      <div class="forScroll rel">
+        <div class="prodContainer flex rel">
+          <script>
+            let prodParent2 = document.querySelector(
+              ".new-p .prodContainer.flex"
+            );
+            makeItem(item6, prodParent2);
+            makeItem(item11, prodParent2);
+            makeItem(item8, prodParent2);
+            makeItem(item13, prodParent2);
+            makeItem(item7, prodParent2);
+            makeItem(item15, prodParent2);
+          </script>
+        </div>
+      </div>
+    </div>
+    <hr class="hrBar" />
+    <!-- Brand Slideshow -->
+    <div class="brand-slide rel">
+      <a class="prev abs" onclick="brandRight(-1)" href="javascript:void(0);"
+        >&#10094;</a
+      >
+      <a class="next abs" onclick="brandRight(1)" href="javascript:void(0);"
+        >&#10095;</a
+      >
+      <div class="forScroll rel">
+        <div class="brandContainer flex rel">
+          <div class="image">
+            <img src="Aakash/img/brand/brand-1.png" alt="img1" />
+          </div>
+          <div class="image">
+            <img src="Aakash/img/brand/brand-2.png" alt="img2" />
+          </div>
+          <div class="image">
+            <img src="Aakash/img/brand/brand-3.png" alt="img3" />
+          </div>
+          <div class="image">
+            <img src="Aakash/img/brand/brand-4.png" alt="img2" />
+          </div>
+          <div class="image">
+            <img src="Aakash/img/brand/brand-5.png" alt="img1" />
+          </div>
+          <div class="image">
+            <img src="Aakash/img/brand/brand-1.png" alt="img4" />
+          </div>
+          <div class="image">
+            <img src="Aakash/img/brand/brand-2.png" alt="img3" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hrBar" />
+    <!-- Our Latest News -->
+    <div class="l-news flex">
+      <div class="left">
+        <img src="Aakash/img/video-poster.jpg" alt="out little story" />
+      </div>
+      <div class="right">
+        <div class="content">
+          <div style="text-align: end"><a href="makeup/blog/html/blog_leftSidebar.html">View More Blog</a></div>
+          <h1 class="heading" style="display: inline-block">Our Latest News</h1>
+          <hr class="hrBar" style="width: 100px; height: 3px" />
+          <div class="card flex">
+            <div class="date rel">
+              <a href="makeup/blog/html/bloggers/i1.html">
+                <h1 style="font-size: 5em; margin: 0 auto">18</h1>
+                <p style="margin: auto; letter-spacing: 2px">January</p>
+              </a>
+            </div>
+            <div class="content">
+              <p style="font-weight: bold; letter-spacing: -0.2px">
+                <a href="makeup/blog/html/bloggers/i2.html"
+                  >Anyway REPS is a NYC agency repres enting photographers</a
+                >
+              </p>
+              <p style="color: gray; letter-spacing: 1px">
+                We love these outfits styled by Phyllis Evans Baker for a Calvin
+                Klein collaboration with the Marie Claire & Esquire teams. You
+                can find mas on
+              </p>
+            </div>
+          </div>
+          <div class="card flex">
+            <div class="date rel">
+              <a href="#">
+                <h1 style="font-size: 5em; margin: 0 auto">30</h1>
+                <p style="margin: auto; letter-spacing: 2px">November</p>
+              </a>
+            </div>
+            <div class="content">
+              <p style="font-weight: bold; letter-spacing: -0.2px">
+                <a href="#">Nasual risus suscipit Lorem Ipsum is simply text</a>
+              </p>
+              <p style="color: gray; letter-spacing: 1px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="includeHTML rel"
+      w3-include-html="Aakash/html/footer.html"
+    ></div>
+    <script src="Aakash/scripts/index.js"></script>
+    <script src="Aakash/scripts/nav.js"></script>
+    <!-- Include HTML Script -->
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        z = document.getElementsByClassName("includeHTML");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+    </script>
+    <script>
+      EventListenFn();
+      
+      window.onload = () => {
+        var navRightBtn = document.querySelectorAll('.right .dropdown .nav-link');
+        for( let i = 0; i < navRightBtn.length; i++) {
+          navRightBtn[i].addEventListener('click', function() {
+            this.nextElementSibling.classList.toggle('dropBlock')
+        })
+      }
+        cartCountUpdate();
+        wishCountUpdate();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+body{
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: 1px;
+}
+.header{
+    background-image:url("../../Aakash/img/parallax-.jpg");
+    background-size: fixed;
+    padding: 30px 70px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header a {
+    color: white;
+  }
+   p > a{
+    right: 0;
+    margin-left: 74%;
+    text-decoration: none;
+    color: white;
+  }
+.h2tage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 55px;
+    font-weight: 700;
+}
+.para{
+    color: gray;
+    font-size: 13px;
+}
+.progress{
+    height: 30px;
+
+}
+.progress-bar {
+    width: 0;
+    animation: progress 1.5s ease-in-out forwards;
+  }
+   .title {
+      opacity: 0;
+      text-align: start;
+      margin-left: 3px;
+      animation: show 0.35s forwards ease-in-out 0.5s;
+    }
+    
+       
+       p{
+           font-weight: 900;
+       }
+ 
+
+   
+  
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 
+  @keyframes show  {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+ }
+
+ .first{
+    margin: 10%;
+    margin-left: 30%;
+
+ }
+
+
+ .progress.or{
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+}
+.progress.or:after{
+    content: "";
+    border-radius: 50%;
+    border: 15px solid #f2f5f5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.progress.or > span{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.progress.or .progress-left{
+    left: 0;
+}
+.progress.or .progress-bar{
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 0;
+}
+.progress.or .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress.or .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress.or .progress-value{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+
+.progress.or.blue .progress-bar{
+    border-color: #26abfd;
+}
+.progress.or.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.or.yellow .progress-bar{
+    border-color: #fdc426;
+}
+.progress.or.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.or.pink .progress-bar{
+    border-color: #f83754;
+}
+.progress.or.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.mypiechart{
+    margin-left: 10%;
+    
+}
+.sec02{
+    margin-left: 35px;
+    margin-top: 80px;
+}
+.sec02 > ul li{
+    list-style-type: none;
+}
+.ic{
+    font-size: 15px;
+    color: palevioletred;
+}
+.ico{
+    font-size: 15px;
+    color: yellow;
+}
+.icoo{
+    font-size: 15px;
+    color: green;
+}
+.icoon{
+    font-size: 15px;
+    color: grey;
+}
+.icoonn{
+    font-size: 15px;
+    color: steelblue
+}
+
+.sec1{
+    margin-top:120px;
+}
+
+
+
+
+#container {
+
+    width: 500px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+  #myChart{
+      width:500px;
+      /*style="width:100%;max-width:600px"*/
+      height: 450px;
+      margin-left: 45px;
+      margin-top: 170px;
+  }
+
+
+
+
+
+ 
+
+
+
+  @media (max-width:800px){
+    .d-flex.or{
+        flex-direction: column;
+    }
+    .d-flex.oa{
+        flex-direction: row;
+    }
+    .h5tag{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .h2tag{
+        font-size: 24px;
+    }
+    .h2tage{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    p > a{
+        margin-left: 0;
+      }
+    
+    .sec2{
+        margin: 0;
+        width: 100%;
+        left: 0;
+
+    }
+    #pie{
+        margin-left: 0 !important;
+        left: 0 !important;
+        margin-right: 0px !important;
+        width: 360px;
+        height:370px ;
+
+    }
+    #container{
+        width:100% ;
+        height: 300px;
+    }
+    #myChart{
+        width: 100%;
+        height: 300px;
+        margin: 0 !important;
+    }
+}

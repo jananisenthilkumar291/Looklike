@@ -1,0 +1,220 @@
+body{
+    background-color: rgb(241, 234, 234);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: 1px;
+}
+.header{
+    background-image:url("../../Aakash/img/parallax-.jpg");
+    background-size: fixed;
+    padding: 30px 70px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header a {
+    color: white;
+  }
+   p > a{
+    right: 0;
+    margin-left: 82%;
+    text-decoration: none;
+    color: white;
+  }
+.h2tage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 55px;
+    font-weight: 700;
+}
+.para{
+    color: gray;
+    font-size: 13px;
+    text-align:center;
+}
+p > a{
+    text-decoration: none;
+    
+}
+
+.progress{
+    height: 55px;
+    margin-bottom: 15px;
+    
+}
+.progress.or{
+    border-radius:4rem;
+}
+.progress-bar.or{
+    background-color:#cfebfe !important ;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.orv{
+    background-color:#fcb53f !important ;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.orvG{
+    border:2px solid green !important ;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+
+.progress-bar.orvGR{
+    border:3px solid red !important ;
+    background-color:#fdeaea;
+    
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+
+
+.progress-bar.porv{
+    background-color:#fff4e2 !important ;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.porvG{
+    background-color:#e6fdf8 !important ;
+    border:1px solid #cfebfe;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.porvGR{
+    background-color:#fdeaea !important ;
+    border-color: #fedede;;
+    
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.ors{
+    background-color:#cfebfe !important ;
+    border-bottom: 5px solid cornflowerblue;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.orsv{
+    background-color:white !important ;
+    border: 2px solid #fcb53f ;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.progress-bar.orsvG{
+    background-color:#e6fdf8 !important ;
+    border: 2px solid #cfebfe;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+
+.progress-bar.orsvGR{
+    background-color:#fdeaea !important ;
+    border: 3px solid #fedede;
+    border-bottom: 5px solid red;
+    color: black;
+    font-size: 15px;
+    text-align: start;
+}
+.iconic{
+    font-size: 18px;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 6px 6px;
+    border-radius: 50%;
+    
+    
+}
+.iconicc{
+    font-size: 18px;
+    color: white;
+    background-color:#fcb53f;
+    padding: 6px 6px;
+    border-radius:40% 30%;
+    
+    
+}
+.iconicg{
+    font-size: 18px;
+    color: white;
+    background-color:green;
+    padding: 12px 14px;
+    margin: 0 !important;
+    
+    
+    
+}
+.iiconicc{
+    font-size: 18px;
+    color: #fcb53f;
+
+    padding: 6px 6px;
+    border-radius:40% 30%;
+    
+    
+}
+.piconicc{
+    font-size: 18px;
+    color: green;
+
+    padding: 6px 6px ;
+    border-radius:40% 30%;
+}
+
+.piconiccr{
+    font-size: 20px;
+    color:red;
+
+    padding: 6px 6px ;
+    border-radius:40% 30%;
+}
+
+   
+    
+
+.d-flex{
+    margin-left: 0px;
+}
+.text{
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+
+@media (max-width:800px){
+    
+    .d-flex.oa{
+        flex-direction: row;
+    }
+    .h5tag{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .h2tage{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    p > a{
+        margin-left: 0;
+      }
+    .text{
+        font-size: 11px;
+    }
+}

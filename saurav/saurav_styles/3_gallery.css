@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+      font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+  }
+  h1,h2,h3,h4,h5,h6{
+      font-family: 'Oswald';
+  }
+  .upper{ 
+    padding: 80px 60px;
+    background: url("../saurav_img/upper.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+  }
+  #upper-left{
+    font-size: 30px;
+    font-family: 'Oswald';
+    float: left;
+  }
+  #upper-right{
+    float: right;
+  }
+  #upper-right a{
+    color: white;
+    text-decoration: double;
+  }
+  .column {
+    float: left;
+    padding: 3px;
+    position: relative;
+  }
+  .column:hover{
+    opacity: 0.85;
+    transition: 0.5s;
+    color: black;
+  }
+  
+  .left, .middle, .right{
+    width: 33.333%;
+  }
+  .left img, .middle img, .right img{
+    max-width: 100%;
+  }
+  
+.right .secondary, .middle .secondary, .left .secondary{
+    position: absolute;
+    bottom: 50%;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    
+  }
+  
+.left:hover .secondary, .middle:hover .secondary, .right:hover .secondary{
+  display: block;
+}
+
+.secondary::before{
+    content: '';
+    position: absolute;
+    /* width: 100px; */
+    height: 3px;
+    background-color: white;
+    bottom: -10px;
+    left: 0%;
+    animation: animate 2s linear infinite;
+}
+.secondary p{
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: large;
+    transition: 0.5s;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
