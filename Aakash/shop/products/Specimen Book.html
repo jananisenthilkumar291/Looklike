@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Specimen Book</title>
+        <link rel = "stylesheet" type = "text/css" href = "../products_styles/product1.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <style>
+            .checked {
+                color: orange;
+            }
+            .header {
+                display: flex;
+                background: url(/Aakash/img/parallax-.jpg);
+                background-attachment: fixed;
+                padding: 30px 50px;
+                color: white;
+                align-items: center;
+                justify-content: space-between;
+                font-size: large;
+            }
+            .header a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </style>
+            <script src="../script/addtocart.js"></script>
+    </head>
+    <body>
+        <div class="header flex">
+            <h2>Shop</h2>
+            <p><a href="../../../index.html">Home </a>&raquo;<a href="../html/shop.html"> Shop </a>&raquo; Specimen Book </p>
+          </div>
+        <br><br>
+
+        <div class = "container">
+            <div class = "row mb-2">
+                <div class = "col-md-5">
+                    <div class="zoom-within-container">
+                        <img 
+                            src="http://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/13.jpg" 
+                            alt="zoom"
+                            style = "width:100%"
+                        />
+                    </div>
+                </div>
+                <div class = "col-md-7">
+                    <h3>Specimen Book</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h5> &#163; 100.00</h5><br>
+                    <p style = "color:grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.</p>
+                    <div class = "row mb-2">
+                        <div class = "col-sm-1">
+                            <br><p>Qty:</p><br>
+                        </div>
+                        <div class = "col-sm-11">
+                            <form>
+                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                <input type="number" id="number" value="0" />
+                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            </form><br>
+                        </div>
+                        
+                        
+                        
+                    </div><br>
+                    <button onclick="callAddtoCart()" class = "cartBtn">Add To Cart</button><br><br>
+                    <p><b>SKU:</b> 2Loop</p> 
+                    <br><p><b>Ctegories:</b> Cleanser,Conditioner  ,Face Powders , Hair Color</p> 
+                    <br><p><b>Tags:</b> Etiam , Ultricies</p>    <br>
+                </div>
+            </div>
+
+
+            <div class = "second">
+                <h5><b class = "Description">Description</b>&nbsp;&nbsp;&nbsp;
+                     |&nbsp;&nbsp;&nbsp;<b class = "ai">Additional Information</b>&nbsp;&nbsp;&nbsp;
+                     | &nbsp;&nbsp;&nbsp;<b class = "review">Reviews(1)</b></h5>
+                <div class = "info1">
+                    <b>Description</b><br>
+                    <b>Paragraph text</b><br>
+                    <p>Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor auctor eget vitae arcu. Nam tempor malesuada porttitor. Nulla quis dignissim ipsum. Aliquam pulvinar iaculis justo, sit amet interdum sem hendrerit vitae. Vivamus vel erat tortor. Nulla facilisi. In nulla quam, lacinia eu aliquam ac, aliquam in nisl.</p>
+                    <br>
+                    <b>Unordered list</b><br>
+                    <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Maecenas ullamcorper est et massa mattis condimentum.</li>
+                    <li>Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.</li>
+                    <li>Etiam nec massa et lectus faucibus ornare congue in nunc.</li>
+                    <li>Mauris eget diam magna, in blandit turpis.</li>
+                    </ul>
+<br>
+                    <b>Ordered list</b><br>
+                    <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Maecenas ullamcorper est et massa mattis condimentum.</li>
+                    <li>Vestibulum sed massa vel ipsum imperdiet malesuada id tempus nisl.</li>
+                    <li>Etiam nec massa et lectus faucibus ornare congue in nunc.</li>
+                    <li>Mauris eget diam magna, in blandit turpis.</li>
+                    <li>In cursus faucibus tortor eu vestibulum. Ut eget turpis ac justo porta varius. Donec vel felis ante, ac vehicula ipsum. Quisque sed diam metus. Quisque eget leo sit amet erat varius rutrum vitae dapibus lectus. Vivamus et sapien ante. Suspendisse potenti. Fusce in tellus est, ac consequat lacus. Nulla risus massa, commodo in imperdiet ut, ornare in leo. Duis pellentesque sagittis lorem, sed mollis lorem venenatis id.</li>
+                    </ol>
+                </div>
+                <div class = "info2" style = "display:none;">
+                    <div class = "row mb-2" style = "padding:10px;">
+                        <div class = "col-md-3" style = "border:1px solid rgb(216, 216, 216);padding:16px;">
+                            <h5>Width</h5>
+                        </div>
+                        <div class = "col-md-9" style = "border:1px solid rgb(216, 216, 216);padding:16px;">
+                            <p>5kg</p>
+                        </div>
+                    </div><br>
+                    <div class = "row mb-2" style = "padding:10px;">
+                        <div class = "col-md-3" style = "border:1px solid rgb(216, 216, 216);padding:16px;">
+                            <h5>Dimentions</h5>
+                        </div>
+                        <div class = "col-md-9" style = "border:1px solid rgb(216, 216, 216);padding:16px;">
+                            <hp>12 × 451 × 25 cm</p>
+                        </div>
+                    </div><br>
+                </div>
+                <div class = "info3" style = "display:none;">
+                    <h4>1 Review For Nam Libero Tempore</h4>
+                    <div class = "row mb-2" style = "padding:10px;">
+                        <div class = "col-sm-2">
+                            <img src = "https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" style = "width:100%;"/>
+                        </div>
+                        <div class = "col-sm-10" style = "border:2px solid rgb(212, 211, 211);padding:7px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <br>
+                            <p><b>admin</b>– September 25, 2018</p>
+                            <br>
+                            quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem
+                         </div>
+                    </div>
+                    <h5> Add A Review</h5>
+                    <p>You Must Be logged In To Post A view</p>
+                </div>
+            </div>
+            <br><br>
+            <div class = "relatedProducts">
+                <h3>RELATED PRODUCTS</h3>
+                <div class = "row mb-2">
+                    <div onclick="window.open('Specimen Book.html', '_parent')" class = "col-sm-3 product1">
+                        <img class = "a1" src = "http://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/13.jpg" style = "width:100%;"/>
+                        <img class = "b1" src = "https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/5-328x384.jpg" style = "width:100%;display:none;"/>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <h5>Specimen Book</h5>
+                        <h5> &#163; 100.00</h5>
+                        <div class = "row mb-2 icons1" style = "display:none;" >
+                            <div class = "col-sm-1"> 
+                                <div class="b11">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16" style = "color:white;">
+                                        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                    </svg>  
+                                </div>     <br>                  
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                    </svg><br>
+                                </div>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b13">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrows-angle-contract" viewBox="0 0 16 16" style = "color:white;">
+                                            <path fill-rule="evenodd" d="M.172 15.828a.5.5 0 0 0 .707 0l4.096-4.096V14.5a.5.5 0 1 0 1 0v-3.975a.5.5 0 0 0-.5-.5H1.5a.5.5 0 0 0 0 1h2.768L.172 15.121a.5.5 0 0 0 0 .707zM15.828.172a.5.5 0 0 0-.707 0l-4.096 4.096V1.5a.5.5 0 1 0-1 0v3.975a.5.5 0 0 0 .5.5H14.5a.5.5 0 0 0 0-1h-2.768L15.828.879a.5.5 0 0 0 0-.707z"/>
+                                        </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b14">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('Nam Libero Tempore.html', '_parent')" class = "col-sm-3 product2">
+                        <img class = "a2" src = https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/3-328x384.jpg" style = "width:100%;"/>
+                        <img class = "b2" src = "https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/17-328x384.jpg" style = "width:100%;display:none;"/>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <h5>Nam Libero Tempore</h5>
+                        <h5> &#163; 88.00</h5>
+                        <div class = "row mb-2 icons2" style = "display:none;">
+                            <div class = "col-sm-1">
+                                <div class="b21">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b22">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b22">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrows-angle-contract" viewBox="0 0 16 16" style = "color: white;">
+                                        <path fill-rule="evenodd" d="M.172 15.828a.5.5 0 0 0 .707 0l4.096-4.096V14.5a.5.5 0 1 0 1 0v-3.975a.5.5 0 0 0-.5-.5H1.5a.5.5 0 0 0 0 1h2.768L.172 15.121a.5.5 0 0 0 0 .707zM15.828.172a.5.5 0 0 0-.707 0l-4.096 4.096V1.5a.5.5 0 1 0-1 0v3.975a.5.5 0 0 0 .5.5H14.5a.5.5 0 0 0 0-1h-2.768L15.828.879a.5.5 0 0 0 0-.707z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b22">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16" style = "color:white;">
+                                        <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+                                      </svg>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('Mauris Eget Diam.html', '_parent')" class = "col-sm-3 product3">
+                        <img class = "a3" src = "http://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/17.jpg" style = "width:100%;"/>
+                        <img class = "b3" src = "https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/8-328x384.jpg" style = "width:100%;display:none;"/>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h5>Mauris Eget Diam</h5>
+                        <h5> &#163; 80.00</h5>
+                        <div class = "row mb-2 icons3" style = "display:none;">
+                            <div class = "col-sm-1">
+                                <div class="b31">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b32">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b33">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrows-angle-contract" viewBox="0 0 16 16" style = "color: white;">
+                                        <path fill-rule="evenodd" d="M.172 15.828a.5.5 0 0 0 .707 0l4.096-4.096V14.5a.5.5 0 1 0 1 0v-3.975a.5.5 0 0 0-.5-.5H1.5a.5.5 0 0 0 0 1h2.768L.172 15.121a.5.5 0 0 0 0 .707zM15.828.172a.5.5 0 0 0-.707 0l-4.096 4.096V1.5a.5.5 0 1 0-1 0v3.975a.5.5 0 0 0 .5.5H14.5a.5.5 0 0 0 0-1h-2.768L15.828.879a.5.5 0 0 0 0-.707z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b34">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('Totam Rem Aperiam.html', '_parent')" class = "col-sm-3 product4" >
+                        <img class = "a4" src = "https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/9.jpg" style = "width:100%;"/>
+                        <img class = "b4" src = "	https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/2-328x384.jpg" style = "width:100%;display:none;"/>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <h5>Totam Rem Aperiam</h5>
+                        <h5> &#163; 150.00</h5>
+                        <div class = "row mb-2 icons4" style = "display:none;">
+                            <div class = "col-sm-1">
+                                <div class="b41">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16" style = "color: white;">
+                                        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b42">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16" style = "color:white;">
+                                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b43">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrows-angle-contract" viewBox="0 0 16 16" style = "color: white;">
+                                        <path fill-rule="evenodd" d="M.172 15.828a.5.5 0 0 0 .707 0l4.096-4.096V14.5a.5.5 0 1 0 1 0v-3.975a.5.5 0 0 0-.5-.5H1.5a.5.5 0 0 0 0 1h2.768L.172 15.121a.5.5 0 0 0 0 .707zM15.828.172a.5.5 0 0 0-.707 0l-4.096 4.096V1.5a.5.5 0 1 0-1 0v3.975a.5.5 0 0 0 .5.5H14.5a.5.5 0 0 0 0-1h-2.768L15.828.879a.5.5 0 0 0 0-.707z"/>
+                                    </svg>
+                                </div><br>
+                            </div>
+                            <div class = "col-sm-1">
+                                <div class="b44">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style = "color:white;">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                                </div><br>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <button type = "button" data-toggle="modal" style = "display:none;" class = "bm11" data-target = "#myModal"></button>
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class = "row mb-2">
+                        <div class = "col-md-5">
+                            <div class="zoom-within-container">
+                                <img 
+                                    src="http://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2020/01/13.jpg" 
+                                    alt="zoom"
+                                    style = "width:100%"
+                                />
+                            </div>
+                        </div>
+                        <div class = "col-md-7">
+                            <h3>Specimen Book</h3>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <h5> &#163; 98.00</h5>
+                            <p style = "color:grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.</p>
+                            <div class = "row mb-2">
+                                <div class = "col-sm-1">
+                                    <p>Qty:</p><br>
+                                </div>
+                                <div class = "col-sm-5">
+                                    <form>
+                                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                        <input type="number" id="number" value="0" />
+                                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                    </form><br>
+                                </div>
+                                <div class = "col-sm-6">
+                                    <button class = "cartBtn">Add To Cart</button>
+                                </div>
+                            </div>
+                            <p><b>SKU:</b> 2Loop</p> 
+                            <p><b>Ctegories:</b> Cleanser,Conditioner  ,Face Powders , Hair Color</p> 
+                            <p><b>Tags:</b> Etiam , Ultricies</p>    
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type = "button" data-toggle="modal" style = "display:none;" class = "compare" data-target = "#myModal1"></button>
+          <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class = "compare1">
+                      <h5>Compare Products</h5>
+                  </div><br><br>
+                  <hr>
+                  <div class = "compare2">
+                    <h6>No Products To Compare .</h6>
+                  </div>
+                  <p>loading...</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script>
+        $(document).ready(function(){
+            $(".Description").click(function(){
+                $(".info1").toggle();
+                $(".info2").hide();
+                $(".info3").hide();
+            });
+            $(".ai").click(function(){
+                $(".info2").toggle();
+                $(".info1").hide();
+                $(".info3").hide();
+            });
+            $(".review").click(function(){
+                $(".info3").toggle();
+                $(".info1").hide();
+                $(".info2").hide();
+            });
+            $(".b12").click(function(){
+                        $(".bm11").click();
+                    });
+                    $(".b13").click(function(){
+                        $(".compare").click();
+                    });
+            $(".product1").mouseenter(function(){
+                        $(".b1").show();                    $(".a1").hide();                    $(".icons1").show();
+                    });
+                    $(".product1").mouseleave(function(){
+                        $(".b1").hide();                    $(".a1").show();                    $(".icons1").hide();
+                    });
+                    $(".product2").mouseenter(function(){
+                        $(".b2").show();                    $(".a2").hide();                    $(".icons2").show();
+                    });
+                    $(".product2").mouseleave(function(){
+                        $(".b2").hide();                    $(".a2").show();                    $(".icons2").hide();
+                    });
+                    $(".product3").mouseenter(function(){
+                        $(".b3").show();                    $(".a3").hide();                    $(".icons3").show();
+                    });
+                    $(".product3").mouseleave(function(){
+                        $(".b3").hide();                    $(".a3").show();                    $(".icons3").hide();
+                    });
+                    $(".product4").mouseenter(function(){
+                        $(".b4").show();                    $(".a4").hide();                    $(".icons4").show();
+                    });
+                    $(".product4").mouseleave(function(){
+                        $(".b4").hide();                    $(".a4").show();                    $(".icons4").hide();
+                    });
+        });
+        </script>
+
+        <script>
+            function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+            }
+
+            function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+            }
+            function callAddtoCart() {
+                let a,b,c;
+                a = 'Specimen Book';
+                b = '£100.00';
+                c = document.getElementById('number').value;
+                storeItem(a,b,c);
+            }
+        </script>
+    </body>
+</html>

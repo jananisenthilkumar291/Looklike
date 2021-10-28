@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Categories</title>
+    <link rel="stylesheet" href="../../../Aakash/css/login.css" />
+    <link rel="stylesheet" href="../../../Aakash/css/gen.css" />
+    <link rel="stylesheet" href="../css/side-gen.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/shop-items.js"></script>
+    <script src="../script/each_cat_items.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .img-container {
+        width: 75%;
+        justify-content: space-evenly;
+        margin-top: 1em;
+      }
+      .image {
+        text-align: center;
+        width: 23%;
+      }
+      .image img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header flex">
+      <h2>Shop</h2>
+      <p><a href="../../../index.html">Home </a>&raquo;<a href="shop.html"> Shop </a>&raquo; All Categories</p>
+    </div>
+    <div class="content flex">
+      <div class="sideLinks">
+        <div>
+          <p class="btn">Recent Posts</p>
+          <div class="links flex">
+            <a href="../../../makeup/blog/html/bloggers/i2.html">Nasual Risus Suscipit Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i3.html">Nostrum Iesum Christum Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i4.html">Urna Risus Suscipit Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i5.html">Nostrum Iesum Christum Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i6.html">Post Format: Image, Lorem Ipsum Is Simply Text</a>
+          </div>
+        </div>
+        <div>
+          <p class="btn">Recent Comments</p>
+          <div class="links flex">
+            <a href="../products/Sapiente Delectus.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Sapiente Delectus</a
+            >
+            <a href="../products/Quisque Sed Diam.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Quisque Sed Diam</a
+            >
+            <a href="../products/Mauris Eget Diam.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Mauris Eget Diam</a
+            >
+            <a href="../products/Specimen Book.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Specimen Book</a
+            >
+            <a href="../products/Consequuntur Magni.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Consequuntur Magni</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="btn">Archives</p>
+          <div class="links flex">
+            <a href="../../../makeup/blog/html/bloggers/i2.html">November 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i3.html">September 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i4.html">April 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i5.html">February 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i6.html">January 2019</a>
+          </div>
+        </div>
+        <div>
+          <p class="btn">Categories</p>
+          <div class="links flex">
+            <a href="../../../makeup/blog/html/blog_leftSidebar.html">Eum Fugiat</a>
+            <a href="../../../makeup/blog/html/blog_rightSidebar.html">Lor Separat</a>
+            <a href="../../../makeup/blog/html/fullWidth.html">Neque Porro</a>
+            <a href="../../../makeup/blog/html/blog_leftSidebar.html">Numque Nihil</a>
+            <a href="../../../makeup/blog/html/blog_rightSidebar.html">Quia Non</a>
+            <a href="../../../makeup/blog/html/fullWidth.html">Refusa Continuar</a>
+            <a href="../../../makeup/blog/html/fullWidth.html">Uncategorized</a>
+          </div>
+        </div>
+        <div>
+          <p class="btn">Categories</p>
+          <div class="links flex">
+            <a href="../../../Aakash/html/login.html">Log In</a>
+            <a href="#">Entries Feed</a>
+            <a href="#">Comments Feed</a>
+            <a href="#">WordPress.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-container flex">
+        <div class="image">
+          <a onclick="sendCat('Conditioner', conditioner)" href="each_cat_items.html"><img src="Aakash/img/image4.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Conditioner', conditioner)" href="each_cat_items.html">Conditioner (2)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Shampoo', shampoo)" href="each_cat_items.html"><img src="Aakash/img/image2.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Shampoo', shampoo)" href="each_cat_items.html">Shampoo (2)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Hair Color', hair_color)" href="each_cat_items.html"><img src="Aakash/img/image3.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Hair Color', hair_color)" href="each_cat_items.html">Hair Color (2)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Mascara', mascara)" href="each_cat_items.html"><img src="Aakash/img/image4.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Mascara', mascara)" href="each_cat_items.html">Mascara (2)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Nail Polish', nail_polish)" href="each_cat_items.html"><img src="Aakash/img/image3.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Nail Polish', nail_polish)" href="each_cat_items.html">Nail Polish (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Lip Gloss', lip_gloss)" href="each_cat_items.html"><img src="Aakash/img/image4.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Lip Gloss', lip_gloss)" href="each_cat_items.html">Lip Gloss (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Night Creams', night_creams)" href="each_cat_items.html"><img src="Aakash/img/image4.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Night Creams', night_creams)" href="each_cat_items.html">Night Creams (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Lipstick', lipstick)" href="each_cat_items.html"><img src="Aakash/img/image1.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Lipstick', lipstick)" href="each_cat_items.html">Lipstick (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Face Powders', face_powder)" href="each_cat_items.html"><img src="Aakash/img/image2.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Face Powders', face_powder)" href="each_cat_items.html">Face Powders (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Hair Care', hair_care)" href="each_cat_items.html"><img src="Aakash/img/image1.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Hair Care', hair_care)" href="each_cat_items.html">Hair Care (7)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Foundations', foundations)" href="each_cat_items.html"><img src="Aakash/img/image3.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Foundations', foundations)" href="each_cat_items.html">Foundations (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Concealers', concealers)" href="each_cat_items.html"><img src="Aakash/img/image2.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Concealers', concealers)" href="each_cat_items.html">Concealers (2)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Eye Shadow', eye_shadow)" href="each_cat_items.html"><img src="Aakash/img/image1.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Eye Shadow', eye_shadow)" href="each_cat_items.html">Eye Shadow (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Cleanser', cleanser)" href="each_cat_items.html"><img src="Aakash/img/image1.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Cleanser', cleanser)" href="each_cat_items.html">Cleanser (11)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Eyeliner', eyeliner)" href="each_cat_items.html"><img src="Aakash/img/image4.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Eyeliner', eyeliner)" href="each_cat_items.html">Eyeliner (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Eyebrow Pencil', conditioner)" href="each_cat_items.html"><img src="Aakash/img/image1.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Eyebrow Pencil', eyebrow_pencil)" href="each_cat_items.html">Eyebrow Pencil (4)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Hair Sprays', hair_sprays)" href="each_cat_items.html"><img src="Aakash/img/image4.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Hair Sprays', hair_sprays)" href="each_cat_items.html">Hair Sprays (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Lip Balm', lip_balm)" href="each_cat_items.html"><img src="Aakash/img/image2.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Lip Balm', lip_balm)" href="each_cat_items.html">Lip Blam (1)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Nail Care', nail_care)" href="each_cat_items.html"><img src="Aakash/img/image1.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Nail Care', nail_care)" href="each_cat_items.html">Nail Care (2)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Lip Makeup', lip_makeup)" href="each_cat_items.html"><img src="Aakash/img/image3.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Lip Makeup', lip_makeup)" href="each_cat_items.html">Lip Makeup (10)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Eye Makeup', eye_makeup)" href="each_cat_items.html"><img src="Aakash/img/image3.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Eye Makeup', eye_makeup)" href="each_cat_items.html">Eye Makeup (4)</a>
+          </div><br/>
+        </div>
+        <div class="image">
+          <a onclick="sendCat('Makeup', makeup)" href="each_cat_items.html"><img src="Aakash/img/image2.jpg" alt="img1" /></a>
+          <div class="bold">
+            <a onclick="sendCat('Makeup', makeup)" href="each_cat_items.html">Makeup (3)</a>
+          </div><br/>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

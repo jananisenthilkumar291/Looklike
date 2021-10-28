@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="../../../Aakash/css/login.css" />
+    <link rel="stylesheet" href="../../../Aakash/css/gen.css" />
+    <link rel="stylesheet" href="../../../Aakash/shop/css/side-gen.css" />
+    <link rel="stylesheet" href="../../../Aakash/css/prodCSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/shop-items.js"></script>
+    <script src="../script/each_cat_items.js"></script>
+    <script src="../script/addtocart.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .img-container {
+        width: 75%;
+        justify-content: space-evenly;
+        margin-top: 1em;
+      }
+      .image {
+        text-align: center;
+        width: 23%;
+      }
+      .image img {
+        width: 100%;
+      }
+      .featured-p .prodContainer {
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header flex">
+      <h2>Shop</h2>
+      <p><a href="../../../index.html">Home </a>&raquo;<a href="shop.html"> Shop </a>&raquo; Wishlist</p>
+    </div>
+    <div class="content flex">
+      <div class="sideLinks">
+        <div>
+          <p class="btn">Recent Posts</p>
+          <div class="links flex">
+            <a href="../../../makeup/blog/html/bloggers/i2.html">Nasual Risus Suscipit Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i3.html">Nostrum Iesum Christum Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i4.html">Urna Risus Suscipit Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i5.html">Nostrum Iesum Christum Lorem Ipsum Is Simply Text</a>
+            <a href="../../../makeup/blog/html/bloggers/i6.html">Post Format: Image, Lorem Ipsum Is Simply Text</a>
+          </div>
+        </div>
+        <div>
+          <p class="btn">Recent Comments</p>
+          <div class="links flex">
+            <a href="../products/Sapiente Delectus.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Sapiente Delectus</a
+            >
+            <a href="../products/Quisque Sed Diam.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Quisque Sed Diam</a
+            >
+            <a href="../products/Mauris Eget Diam.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Mauris Eget Diam</a
+            >
+            <a href="../products/Specimen Book.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Specimen Book</a
+            >
+            <a href="../products/Consequuntur Magni.html"
+              ><span class="fa fa-comments-o"></span>
+              <span style="color: black">Admin</span> on Consequuntur Magni</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="btn">Archives</p>
+          <div class="links flex">
+            <a href="../../../makeup/blog/html/bloggers/i2.html">November 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i3.html">September 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i4.html">April 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i5.html">February 2019</a>
+            <a href="../../../makeup/blog/html/bloggers/i6.html">January 2019</a>
+          </div>
+        </div>
+        <div>
+          <p class="btn">Categories</p>
+          <div class="links flex">
+            <a href="../../../makeup/blog/html/blog_leftSidebar.html">Eum Fugiat</a>
+            <a href="../../../makeup/blog/html/blog_rightSidebar.html">Lor Separat</a>
+            <a href="../../../makeup/blog/html/fullWidth.html">Neque Porro</a>
+            <a href="../../../makeup/blog/html/blog_leftSidebar.html">Numque Nihil</a>
+            <a href="../../../makeup/blog/html/blog_rightSidebar.html">Quia Non</a>
+            <a href="../../../makeup/blog/html/fullWidth.html">Refusa Continuar</a>
+            <a href="../../../makeup/blog/html/fullWidth.html">Uncategorized</a>
+          </div>
+        </div>
+        <div>
+          <p class="btn">Categories</p>
+          <div class="links flex">
+            <a href="../../../Aakash/html/login.html">Log In</a>
+            <a href="#">Entries Feed</a>
+            <a href="#">Comments Feed</a>
+            <a href="#">WordPress.org</a>
+          </div>
+        </div>
+      </div>
+      <div class="featured-p rel">
+        <br />
+        <div id="result-count" class="results bold"></div>
+        <div class="prodContainer flex">
+        </div>
+        <script>
+          getWishlist();
+          EventListenFn();
+          let removeBtn = document.querySelectorAll(".wishRemove");
+          for (let i = 0; i < removeBtn.length; i++) {
+            removeBtn[i].addEventListener("click", (e) => {
+              let item = e.currentTarget.parentElement.parentElement;
+              removeWishItem(item);
+            });
+          }
+        </script>
+        <script>
+          let z = JSON.parse(localStorage.getItem("MakeupItem"));
+          if (z == null) {
+            document.getElementById('result-count').innerHTML = "Your Wishlist is empty."
+          } else {
+            wishEmptyCheck();
+          }
+        </script>
+      </div>
+
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>

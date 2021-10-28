@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="../../../Aakash/css/prodCSS.css" />
+    <link rel="stylesheet" href="../../../Aakash/css/login.css" />
+    <link rel="stylesheet" href="../../../Aakash/css/gen.css" />
+    <link rel="stylesheet" href="../css/side-gen.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/shop-items.js"></script>
+    <script src="../script/addtocart.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .top-text {
+        color: gray;
+        line-height: 150%;
+        font-size: 0.9em;
+        margin-top: 16px;
+      }
+      .results {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header flex">
+      <h2>Shop</h2>
+      <p><a href="../../../index.html">Home </a> &raquo; Shop</p>
+    </div>
+    <div class="content flex">
+      <div class="sideLinks">
+        <div>
+          <p class="btn">Product Categories</p>
+          <div class="links flex">
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(cleanser)"
+              >Cleanser</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(concealers)"
+              >Concealers</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(eye_makeup)"
+              >Eye Makeup</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(face_powder)"
+              >Face Powder</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(hair_care)"
+              >Hair Care</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(hair_sprays)"
+              >Hair Sprays</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(lip_makeup)"
+              >Lip Makeup</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(makeup)"
+              >Makeup</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(nail_care)"
+              >Nail Care</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(night_creams)"
+              >Night Creams</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(uncategorized)"
+              >Uncategorized</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="btn">Product Tags</p>
+          <div class="tags">
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(adipiscing)"
+              >Adipiscing</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(augue)"
+              >Augue</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(bibendum)"
+              >Bibendum</a
+            >
+            <a href="#result-count" onclick="categorized.bind(this)(cras)"
+              >Cras</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(dapibus)"
+              >Dapibus</a
+            >
+            <a href="#result-count" onclick="categorized.bind(this)(eget)"
+              >Eget</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(etiam)"
+              >Etiam</a
+            >
+            <a href="#result-count" onclick="categorized.bind(this)(leo)"
+              >Leo</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(pretium)"
+              >Pretium</a
+            >
+            <a href="#result-count" onclick="categorized.bind(this)(quis)"
+              >Quis</a
+            >
+            <a href="#result-count" onclick="categorized.bind(this)(sem)"
+              >Sem</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(ultricies)"
+              >Ultricies</a
+            >
+            <a
+              href="#result-count"
+              onclick="categorized.bind(this)(viverra)"
+              >Viverra</a
+            >
+          </div>
+        </div>
+        <div>
+          <p class="btn">Top Rated Products</p>
+          <div class="prodContainer flex">
+            <div class="prod rel">
+              <a href="../products/Specimen Book.html"
+                ><img class="img1" src="../img/shop10.jpg" alt=""
+              /></a>
+              <a href="../products/Specimen Book.html"
+                ><img class="img2" src="../img/shop06.jpg" alt=""
+              /></a>
+
+              <div class="star-container">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p>
+                <a href="../products/Specimen Book.html"
+                  >Specimen Book</a
+                >
+              </p>
+              <span class="prod-cost">£100.00</span>
+            </div>
+            <div class="prod rel">
+              <a href="../products/Voluptatem Accusantium.html"
+                ><img class="img1" src="../img/shop09.jpg" alt=""
+              /></a>
+              <a href="../products/Voluptatem Accusantium.html"
+                ><img class="img2" src="../img/shop16.jpg" alt=""
+              /></a>
+
+              <div class="star-container">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <p>
+                <a href="../products/Voluptatem Accusantium.html"
+                  >Voluptatem Accusantium</a
+                >
+              </p>
+              <span class="prod-cost">£98.00</span>
+            </div>
+            <div class="prod rel">
+              <a href="../products/Mauris Eget Diam.html"
+                ><img class="img1" src="../img/shop12.jpg" alt=""
+              /></a>
+              <a href="../products/Mauris Eget Diam.html"
+                ><img class="img2" src="../img/shop06.jpg" alt=""
+              /></a>
+
+              <div class="star-container">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p>
+                <a href="../products/Mauris Eget Diam.html"
+                  >Mauris Eget Diam</a
+                >
+              </p>
+              <span class="prod-cost">£80.00</span>
+            </div>
+            <div class="prod rel">
+              <a href="../products/Ipsum Amet Dummy.html"
+                ><img class="img1" src="../img/shop08.jpg" alt=""
+              /></a>
+              <a href="../products/Ipsum Amet Dummy.html"
+                ><img class="img2" src="../img/shop10.jpg" alt=""
+              /></a>
+
+              <div class="star-container">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p>
+                <a href="../products/Ipsum Amet Dummy.html"
+                  >Ipsum Amet Dummy</a
+                >
+              </p>
+              <span class="old-cost">£95.00</span>
+              <span class="prod-cost">£77.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="featured-p rel">
+        <div class="top-text">
+          <img
+            style="width: 100%"
+            src="../img/shop-main.jpg"
+            alt=""
+          />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <br /><br />
+        <div id="result-count" class="results">Showing all 17 products</div>
+        <div class="prodContainer flex"></div>
+        <script>
+          for (let i = 0; i < itemList.length; i++) {
+            makeItem(itemList[i])
+          };
+          EventListenFn();
+        </script>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+  </body>
+</html>
