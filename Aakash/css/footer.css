@@ -1,0 +1,79 @@
+.footer {
+  padding: 40px 0;
+  padding-bottom: 0;
+  background-color: black;
+}
+.footer .spcl-item {
+  color: white;
+  text-align: center;
+  width: 30%;
+}
+.footer .spcl-item .fa {
+  padding: 20px;
+  font-size: x-large;
+  background-color: #212121;
+  transition: all 0.2s;
+}
+.footer .spcl-item :nth-child(3),
+.footer .spcl-item :nth-child(4),
+.footer .nav-bar-link,
+.footer .social-links {
+  color: gray;
+  font-size: small;
+  letter-spacing: 1px;
+  justify-content: center;
+}
+.footer .ver-bar::after {
+  background-color: gray;
+}
+.footer .social-links a {
+  font-size: x-large;
+  margin: 5px 15px;
+  margin-bottom: 30px;
+}
+.footer .copyright {
+  background-color: rgba(128, 53, 76);
+  padding: 1px 0;
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+.footer .copyright span {
+  background-image: url(../img/payment.png);
+  filter: grayscale(1);
+  background-position-x: center;
+  display: inline-block;
+  width: 33px;
+  border-radius: 3px;
+  height: 20px;
+  margin: 0 5px;
+}
+.footer a:hover {
+  color: white;
+}
+.footer .spcl-item:hover .fa {
+  color: rgba(128, 53, 76);
+  transform: rotate3d(1,1,1,359deg);
+}
+@media screen and (min-width: 501px) {
+  .footer .nav-bar-link a {
+    padding: 20px;
+    margin: 40px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer .spcl-item {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer .nav-bar-link.flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .nav-bar-link.flex > a {
+    margin: 5px 0;
+  }
+  .footer .ver-bar::after {
+    display: none;
+  }
+}

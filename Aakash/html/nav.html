@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Nav-bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar flex">
+      <div class="menuBar flex" onclick="menuF()"><span class="fa fa-bars" ></span></div>
+      <div class="left flex">
+        <img src="Aakash/img/logo.png" alt="Logo" />
+      </div>
+      <div class="middle flex">
+        <span onclick="menuF()" class="fa fa-times"></span>
+        <a href="#" class="nav-link ver-bar rel">Home</a>
+        <div class="nav-link dropdown ver-bar rel">
+          <a class="nav-link" href="Aakash/shop/html/shop.html">Shop</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <a href="Aakash/shop/html/topRated.html" class="nav-link">Top Rated Product</a>
+            <a href="Aakash/shop/html/prodCategory.html" class="nav-link">Product Category</a>
+          </div>
+        </div>
+        <div class="nav-link dropdown ver-bar rel">
+          <a class="nav-link" href="makeup/blog/html/blog_leftSidebar.html">Blog</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <a href="makeup/blog/html/blog_leftSidebar.html" class="nav-link">Left Sidebar</a>
+            <a href="makeup/blog/html/blog_rightSidebar.html" class="nav-link">Right Sidebar</a>
+            <a href="makeup/blog/html/fullWidth.html" class="nav-link">Full Width</a>
+          </div>
+        </div>
+        <div class="nav-link dropdown ver-bar rel">
+          <a class="nav-link" href="#">Media</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <div class="flex">
+              <div class="left">
+                <p class="bold"><a class="nav-link" href="saurav/2_Gallery.html">Gallery</a></p>
+                <a href="saurav/2_Gallery.html" class="nav-link">2 Columns</a>
+                <a href="saurav/3_Gallery.html" class="nav-link">3 Columns</a>
+                <a href="saurav/4_Gallery.html" class="nav-link">4 Columns</a>
+              </div>
+              <div class="right">
+                <p class="bold"><a class="nav-link" href="saurav/2_Portfolio.html">Portfolio</a></p>
+                <a href="saurav/2_Portfolio.html" class="nav-link">2 Columns</a>
+                <a href="saurav/3_Portfolio.html" class="nav-link">3 Columns</a>
+                <a href="saurav/4_Portfolio.html" class="nav-link">4 Columns</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link dropdown ver-bar rel">
+          <a class="nav-link" href="javascript:void(0);">ShortCode</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <div class="flex">
+              <div class="left">
+                <p class="bold"><a class="nav-link" href="#">Shortcode Pages</a></p>
+                <a href="yamini/accordions&toogles.html" class="nav-link">Accordians & Toggles</a>
+                <a href="yamini/buttons.html" class="nav-link">Buttons</a>
+                <a href="yamini/divider.html" class="nav-link">Divider</a>
+                <a href="yamini/progress&piechart.html" class="nav-link">Progress Bar & Pie Chart</a>
+                <a href="yamini/lists.html" class="nav-link">Lists</a>
+              </div>
+              <div class="right">
+                <p class="bold"><a class="nav-link" href="#">Shortcode Pages</a></p>
+                <a href="yamini/services.html" class="nav-link">Services</a>
+                <a href="yamini/Tabs.html" class="nav-link">Tabs</a>
+                <a href="yamini/map&contact.html" class="nav-link">Map & Contact</a>
+                <a href="yamini/messagebox.html" class="nav-link">Message Boxes</a>
+                <a href="yamini/pricingtable.html" class="nav-link">Pricing Table</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link dropdown rel">
+          <a class="nav-link" href="#">More</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+              <p class="bold"><a class="nav-link" href="makeup/more/html/features.html">Features</a></p>
+              <a href="makeup/more/html/FAQ.html" class="nav-link">FAQs</a>
+              <a href="makeup/more/html/typography.html" class="nav-link">Typography</a>
+              <a href="makeup/more/html/sitemap.html" class="nav-link">Sitemap</a>
+              <a href="makeup/more/html/about.html" class="nav-link">About Us</a>
+              <a href="makeup/more/html/contact.html" class="nav-link">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="right flex">
+        <div class="dropdown rel" >
+          <a href="javascript:void(0);" class="nav-link fa fa-search"></a>
+          <div class="drop-content abs"><input type="text" placeholder="Search..."/><button type="submit" class="btn fa fa-search" ></button></div>
+        </div>
+        <div class="dropdown rel">
+          <a href="javascript:void(0);" class="nav-link fa fa-user-o"></a>
+          <div class="drop-content abs">
+            <a href="Aakash/html/login.html" class="nav-link">User Login</a>
+            <a href="saurav/checkout.html" class="nav-link">Checkout</a>
+          </div>
+        </div>
+        <a href="Aakash/shop/html/wishlist.html" class="nav-link rel fa fa-heart-o"><span id="wishCount" >0</span></a>
+        <a href="Aakash/shop/Cart Section/cart.html" class="nav-link rel fa fa-shopping-bag"><span id="cartCount" >0</span>
+          &nbsp;<span id="totalCost"></span>
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

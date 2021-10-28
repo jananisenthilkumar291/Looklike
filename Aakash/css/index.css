@@ -1,0 +1,234 @@
+.slide > img {
+  width: 100%;
+  min-height: 250px;
+}
+.content.abs {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 40%;
+}
+.slide .content .heading {
+  font-size: 2em;
+}
+.next,
+.prev {
+  border-radius: 50%;
+  padding: 10px 13px;
+  top: 50%;
+  z-index: 2;
+  text-decoration: none;
+  background: rgba(128, 53, 76);
+  color: white;
+  transition: all 0.4s;
+}
+.next {
+  right: 5%;
+}
+.prev {
+  left: 5%;
+}
+.lStory, .l-news {
+  margin: 60px 5px;
+  padding: 10px;
+}
+.lStory .left,
+.l-news .left {
+  width: 55%;
+}
+.lStory .left img,
+.l-news .left img {
+  width: 100%;
+}
+.lStory .right,
+.l-news .right {
+  width: 45%;
+  align-items: center;
+}
+.content p.heading {
+  font-size: 2em;
+}
+.right .content .btn {
+  margin-top: 20px;
+}
+.shop, .featured-p, .new-p, .brand-slide {
+  text-align: center;
+}
+.shop .hrBar,
+.featured-p .hrBar,
+.new-p .hrBar {
+  margin: auto;
+  overflow: hidden;
+}
+.shop .forScroll,
+.new-p .forScroll,
+.brand-slide .forScroll {
+  margin: 30px 5px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.shop .img-container {
+  flex-wrap: nowrap;
+  width: 350%;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.shop .img-container .image {
+  width: 9%;
+  position: relative;
+}
+.shop .img-container img,
+.brand-slide .brandContainer img {
+  width: 100%;
+}
+.shop .descrip {
+  bottom: 0;
+  left: 0;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+.shop .image:hover .descrip {
+  bottom: 15px;
+  left: 15px;
+}
+.descrip span.ver-bar {
+  padding: 5px;
+  font-size: medium;
+  font-weight: bold;
+  color: rgba(128, 53, 76);
+}
+.descrip span.ver-bar::after {
+  right: 100%;
+  height: 15px;
+}
+body > .hrBar {
+  width: 90%;
+  height: 1px;
+  margin: 80px auto;
+  background-color: #ccc;
+}
+.spcl-feature {
+  justify-content: space-evenly;
+  color: gray;
+}
+.spcl-feature .bold {
+  color: black;
+}
+.spcl-item .left {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: xx-large;
+  transition: all 0.2s;
+}
+.spcl-feature .spcl-item:hover .left,
+.spcl-feature .spcl-item:hover .right .bold {
+  color: rgba(128, 53, 76);
+  transform: rotate3d(1,1,1,359deg);
+}
+
+.poster {
+  text-align: center;
+  background-image: url(../img/parallax-.jpg);
+  padding: 100px 0;
+  color: white;
+  font-size: xx-large;
+}
+.poster .heading {
+  font-size: 2em;
+}
+.new-p .prodContainer,
+.brand-slide .brandContainer {
+  width: 200%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.new-p .prodContainer .prod {
+  width: 10%;
+  position: inherit;
+}
+.card {
+  margin: 10px 0;
+  padding: 30px 20px;
+  transition: all 0.2s;
+  width: 100%;
+}
+.content .card {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.card:hover {
+  box-shadow: 0 0 20px -9px #8a8a8a;
+}
+.card .date {
+  width: 20%;
+}
+.card .date::after {
+  content: '';
+  position: absolute;
+  width: 2%;
+  height: 75%;
+  right: -30px;
+  top: 0;
+  background-color: gray;
+}
+.card .content {
+  width: 60%;
+  transition: all 0.2s;
+}
+.card .content > p > a:hover {
+  color:rgba(128, 53, 76);
+}
+@media screen and (max-width:700px) {
+  .slidesContainer .slide .content,
+  .slidesContainer .slide .content .heading {
+    font-size: medium;
+  }
+}
+@media screen and (max-width:600px) {
+  .shop .img-container {
+    width: 800%;
+  }
+  .new-p .prodContainer {
+    width: 500%;
+  }
+  .brand-slide .brandContainer {
+    width: 400%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .lStory .left,
+  .l-news .left {
+    width: 80%;
+    margin: auto;
+  }
+  .lStory .right,
+  .l-news .right {
+    width: 100%;
+    text-align: center;
+  }
+  .hrBar {
+  margin: 2px auto !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .spcl-item {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content .card {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .l-news .right .card .date::after{
+    display: none;
+  }
+  .l-news .right .card .date,
+  .l-news .right .card .content {
+    width: 80%;
+  }
+}
