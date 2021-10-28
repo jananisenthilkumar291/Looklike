@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Full Width</title>
+        <link rel = "stylesheet" type = "text/css" href = "../styles/blog_leftSidebar.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }            
+            .row > .column {
+              padding: 0 8px;
+            }            
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }            
+            .column {
+              float: left;
+              width: 25%;
+            }            
+            /* The Modal (background) */
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 1;
+              padding-top: 100px;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: black;
+            }           
+            /* Modal Content */
+            .modal-content {
+              position: relative;
+              background-color: #fefefe;
+              margin: auto;
+              padding: 0;
+              width: 90%;
+              max-width: 1200px;
+            }           
+            /* The Close Button */
+            .close {
+              color: white;
+              position: absolute;
+              top: 10px;
+              right: 25px;
+              font-size: 35px;
+              font-weight: bold;
+            }
+            
+            .close:hover,  .close:focus {
+              color: #999;
+              text-decoration: none;
+              cursor: pointer;
+            }            
+            .mySlides {
+              display: none;
+            }            
+            .cursor {
+              cursor: pointer;
+            }            
+            /* Next & previous buttons */
+            .prev,            .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -50px;
+              color: white;
+              font-weight: bold;
+              font-size: 20px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+              -webkit-user-select: none;
+            }            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,            .next:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }                   
+            img {
+              margin-bottom: -4px;
+            }            
+            .caption-container {
+              text-align: center;
+              background-color: black;
+              padding: 2px 16px;
+              color: white;
+            }            
+            .demo {
+              opacity: 0.6;
+            }            
+            .active,.demo:hover {
+              opacity: 1;
+            }            
+            img.hover-shadow {
+              transition: 0.3s;
+            }            
+            .hover-shadow:hover {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "top">
+            <h3>
+                <b>Full Width</b> 
+                <div class = "right">
+                    <a style = "text-decoration: none;color:white" href = "../../../index.html">Home</a>
+                    >> Right Sidebar
+                </div>
+            </h3>
+        </div>
+        <br><br>
+        <div class = "container">
+            <div class = "col-md-12">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <img src="https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2019/11/ullamco-laboris-nisi.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor iii">  
+                        <div class = "info">
+                            <div class = "row mb-2">
+                                <div class = "col-sm-2">
+                                    <br><h1 style = "color:rgb(90,40,40)"><b>18</b></h1>
+                                    <p>Jan 2019</p>
+                                </div>
+                                <div class = "col-sm-10">
+                                    <br><h5><a href = "bloggers/i12.html" style = "text-decoration: none;color:black">Anyway REPS is a NYC agency representing photographers</a></h5>
+                                    <p>We love these outfits styled by Phyllis Evans Baker for a Calvin Klein collaboration with the Marie Claire & .
+                                    <a href = "bloggers/i12.html" style = "text-decoration: none;color:black"><b>Read More..</b></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">          
+                        <div class="mySlides">
+                            <img src="https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2019/11/ullamco-laboris-nisi.jpg" style="width:100%" class = "iii">
+                        </div>                   
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>          
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>         
+                        <div class = "row mb-2">
+                            <div class = "col-sm-2">
+                                <img class="demo cursor iii" src="https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2019/11/ullamco-laboris-nisi.jpg" style="width:100%" onclick="currentSlide(1)">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <br><br><div class = "pagination">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="blog_rightSidebar.html" style = "color:black;">1</a></li>
+                          <li class="page-item"><a class="page-link" href="rpage2.html" style = "color:black;">2</a></li>
+                          <li class="page-item"><a class="page-link" href="rpage3.html" style = "color:black;">3</a></li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+.top > h3 > b{
+    float:left;
+}
+.top > h3 > .right{
+    float:right;
+}
+.top{
+    background-color:rgb(90, 40, 40);
+    color:white;
+    background-attachment: fixed;
+    width:100%;
+    padding:4%;
+}
+.first{
+    width:94%;
+    margin-left:3%;
+}
+.main{
+    background-color:#80354C;
+    padding:3px;
+    color:white;
+    padding-left:20px;
+}
+.image1{
+    background-image: url("https://capricathemes.com/wordpress/WCM01/WCM010018/wp-content/uploads/2019/11/minim-veniam.jpg");
+    /* height:100%;
+    width:100%; */
+}
+.iii{
+    z-index : -1;
+}
+
+.pagination{
+    margin-left:35%;
+    color:#80354C;
+}
+
+button{
+    width:90%;
+    margin-left:5%;
+    background-color:#80354C;
+    color:white;
+    height:40px;
+    border-color:transparent;
+    border-radius:3px;
+    padding:5px;
+}

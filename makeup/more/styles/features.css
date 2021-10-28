@@ -1,0 +1,38 @@
+.top > h4 > b{
+    float:left;
+}
+.top > h4 > .right{
+    float:right;
+}
+.top{
+    background-color:rgb(90, 40, 40);
+    color:white;
+    background-attachment: fixed;
+    width:100%;
+    padding:4%;
+}
+
+.first{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    padding:10px;
+    width:80%;
+    margin-left:10%;
+}
+.purchaseNowBtn{
+    background-color:#80354C;
+    border-color:transparent;
+    width:20%;
+    /* margin-left:40%; */
+    height:50px;
+    color:white
+}
+
+.allRows{
+    width:90%;
+    margin-left:5%;
+    padding:2px;
+}
+.indiv{
+    padding:20px;
+}

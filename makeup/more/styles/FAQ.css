@@ -1,0 +1,55 @@
+.top > h3 > b{
+    float:left;
+}
+.top > h3 > .right{
+    float:right;
+}
+.top{
+    background-color:rgb(90, 40, 40);
+    color:white;
+    background-attachment: fixed;
+    width:100%;
+    padding:4%;
+}
+.howCanWeHelp{
+    width:80%;
+    margin-left:10%;
+    background-color:rgb(236, 234, 234);
+    padding:3px;
+}
+.helpGuidesh2{
+    margin-left:40%;
+}
+.howCanWeHelp > h1{
+margin-left:34%;
+}
+.howCanWeHelp > p{
+    margin-left:33%;
+}
+.helpGuides{
+    margin-left:5%;
+}
+.q{
+    border:2px solid rgb(209, 208, 208);
+    border-radius:2px;
+    height:40px;
+    width:90%;
+    padding:2px;
+    color:rgb(179, 178, 178);
+}
+.a{
+    display:none;
+    width:90%;
+}
+.popularQuestions{
+    width:90%;
+    margin-left:5%;
+}
+.popularQuestionsh2{
+    margin-left:5%;
+}
+.last{
+    width:80%;
+    margin-left:10%;
+    padding:10px;
+}

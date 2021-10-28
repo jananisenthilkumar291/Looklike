@@ -1,0 +1,56 @@
+.top > h3 > b{
+    float:left;
+}
+.top > h3 > .right{
+    float:right;
+}
+.top{
+    background-color:rgb(90, 40, 40);
+    color:white;
+    background-attachment: fixed;
+    width:100%;
+    padding:4%;
+}
+.map{
+    width:100%;
+    padding-top:5%;
+    padding-left:10%;
+    padding-right:10%;
+}
+.third{
+    align-items: center;
+    background-color:#F7F7F7;
+    padding:25px;
+    margin-left:5%;
+    margin-right:5%;
+}
+.third > h1{
+    margin-left:38%;
+}
+.third > h6{
+    margin-left:27%;
+}
+
+.third > input{
+    width:90%;
+    height:40px;
+    border-radius:8px;
+    border-color:transparent;
+}
+.third > textarea{
+    width:95%;
+    border-radius:8px;
+    border-color:transparent;
+}
+.last{
+    margin-left:10%;
+    margin-right:10%;
+}
+.left{
+    background-color: #F7F7F7;
+    padding-top:15%;
+    height:150px;
+}
+.left > svg{
+    margin-left:40%;
+}

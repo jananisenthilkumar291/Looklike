@@ -1,0 +1,47 @@
+.top > h4 > b{
+    float:left;
+}
+.top > h4 > .right{
+    float:right;
+}
+.top{
+    background-color:rgb(90, 40, 40);
+    color:white;
+    background-attachment: fixed;
+    width:100%;
+    padding:4%;
+}
+.avatar {
+	width: 100px;
+	height: 100px;
+  margin: 10px;
+}
+.first{
+    width:94%;
+    margin-left:3%;
+}
+p{
+    color:grey;
+}
+.last{
+    background-color: rgb(236, 236, 236);
+    /* height:100px; */
+    width:100%;
+    padding:20px;
+}
+.main{
+    background-color:#80354C;
+    padding:3px;
+    color:white;
+    padding-left:20px;
+}
+button{
+    width:90%;
+    margin-left:5%;
+    background-color:#80354C;
+    color:white;
+    height:40px;
+    border-color:transparent;
+    border-radius:3px;
+    padding:5px;
+}

@@ -1,0 +1,26 @@
+.hFamily{
+    width:90%;
+    margin-left:5%;
+}
+.top > h3 > b{
+    float:left;
+}
+.top > h3 > .right{
+    float:right;
+}
+.top{
+    background-color:rgb(90, 40, 40);
+    color:white;
+    background-attachment: fixed;
+    width:100%;
+    padding:4%;
+}
+.vert{
+    height: 100%;
+    width:3px;
+    background-color: black;
+}
+.last{
+    width:95%;
+    margin-left:2%;
+}
